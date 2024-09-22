@@ -1,0 +1,109 @@
+/* Generelle stiler */
+body {
+  background-image: url("Bilder/\ skyer.jpg"); /* Lager bildebakgrunn*/
+  background-size: cover; 
+  background-attachment: fixed; /* Fiksert bakgrunn mens du ruller */
+  color: #000000;
+  font-family: Georgia, sans-serif;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* Når lenken er trykket */
+.nav-link:active {
+/*   border: 2px solid rgb(127, 127, 127); /* Grå kant */
+  background-color: lightgray; /* Lys grå bakgrunn */
+  box-shadow: 0 0 5px gray; /* Eventuelt en skygge */
+}
+
+/* Hover-effekt for navigasjonslenker */
+.nav-link:hover {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 2px solid gray; /* Grå kant */
+  border-radius: 4px;
+}
+
+/* Stiler for header og navigasjon */
+header {
+  background-color: #2b97b5;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+/* Stiler for innhold og lenker */
+main {  
+  padding: 20px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: lightgray;
+  border: 2px solid gray;
+  padding: 5px;
+  border-radius: 4px;
+  color: #333;
+}
+
+/* Stiler for hovedseksjoner */
+#hoved {
+  width: 65%;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: white;
+  border: 3px solid #3ccdf5;
+}
+
+.content {
+  min-height: 80vh;
+  padding: 20px;
+}
+
+/* Stiler for footer */
+footer {
+  background-color: #2b97b5;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
