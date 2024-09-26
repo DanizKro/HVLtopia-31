@@ -31,6 +31,7 @@ section {
     margin-right: 300px;
 }
 
+<<<<<<< HEAD
 /*bilde til til nettsiden */
 #bilde1 {
    
@@ -43,17 +44,17 @@ section {
 }
 
 
+=======
+>>>>>>> 27e1d1e6a98203232851c1bfc6cc31394ba10d52
  .container {
 
     display: flex;
     align-items: center;
  }
 
-
 nav ul {
  list-style: none;
  padding: 0; /*overskrift*/
-
 
 }
 nav li {
@@ -68,21 +69,20 @@ a {
  text-decoration-color: #ffffff;
 }
 
-#hoved {
- width: 65%;                /* bredde: 60 % av vinduet */
- margin: 100px auto;        /* 100 px over elementet, auto midtstiller det */
- padding: 40px;             /* luft mellom kantlinjene og innholdet */
- background-color: white;   /* hvit bakgrunnsfarge */
- border: 3px solid #f58f3c; /* rosa kantlinje */
-}
-#hoved2 {
- width: 80%;
- margin: 50px auto;
- padding: 40px;
- background-color: white; 
- border: 3px solid #f58f3c;
-}
+/*bilde til om nettsiden */
 
+#bilde1 {
+   
+    width: 400px;
+     height: 400px;
+     border-radius: 50%;
+     object-fit: cover;
+     margin-left: 400px;
+     display: flex;
+ }
+
+
+<<<<<<< HEAD
 .column {
     float: left;
     width: 33.33%;
@@ -116,3 +116,5 @@ a {
   footer a:hover {
     text-decoration: underline;
   }
+=======
+>>>>>>> 27e1d1e6a98203232851c1bfc6cc31394ba10d52
