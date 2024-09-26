@@ -1,4 +1,10 @@
-
+body {
+    background-size: cover;
+    background-attachment: fixed; /* Fiksert bakgrunn mens du ruller */
+    color:#000000;
+    font-family: Georgia, sans-serif;
+   }
+   
 header {
     background-color: #114358;
     color: #ffffff;
@@ -25,8 +31,7 @@ section {
     margin-right: 300px;
 }
 
-/*bilde til om nettsiden */
-
+/*bilde til til nettsiden */
 #bilde1 {
    
    width: 400px;
@@ -89,4 +94,25 @@ a {
     content: "";
     clear: both;
     display: table;
+  }
+  
+ /* Stiler for footer */
+ footer {
+    background-color: #114358;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
   }
