@@ -4,7 +4,7 @@ body {
     color:#000000;
     font-family: Georgia, sans-serif;
    }
-   
+
 header {
     background-color: #114358;
     color: #ffffff;
@@ -31,7 +31,6 @@ section {
     margin-right: 300px;
 }
 
-<<<<<<< HEAD
 /*bilde til til nettsiden */
 #bilde1 {
    
@@ -44,8 +43,6 @@ section {
 }
 
 
-=======
->>>>>>> 27e1d1e6a98203232851c1bfc6cc31394ba10d52
  .container {
 
     display: flex;
@@ -82,7 +79,6 @@ a {
  }
 
 
-<<<<<<< HEAD
 .column {
     float: left;
     width: 33.33%;
@@ -116,5 +112,3 @@ a {
   footer a:hover {
     text-decoration: underline;
   }
-=======
->>>>>>> 27e1d1e6a98203232851c1bfc6cc31394ba10d52
