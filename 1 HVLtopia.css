@@ -1,17 +1,4 @@
 
-body {
-    background-size: cover;
-    background-attachment: fixed; /* Fiksert bakgrunn mens du ruller */
-    color:#000000;
-    font-family: Georgia, sans-serif;
-   
-    
-   }
-   
-h3 {
-    color: #000000;
-   }
-
 header {
     background-color: #114358;
     color: #ffffff;
@@ -36,10 +23,11 @@ section {
     align-items: center;
     margin-left: 300px;
     margin-right: 300px;
-    
+}
 
+/*bilde til om nettsiden */
 
-img  {
+#bilde1 {
    
    width: 400px;
     height: 400px;
@@ -48,10 +36,8 @@ img  {
     margin-left: 400px;
     display: flex;
 }
-.fotter{
-    background: #114358;
-  }
- }
+
+
  .container {
 
     display: flex;
