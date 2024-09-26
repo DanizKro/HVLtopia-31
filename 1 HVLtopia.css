@@ -1,0 +1,96 @@
+   
+header {
+    background-color: #114358;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0; /* høgde */
+    display: flex;
+  h1{font-size:50px;
+     font:bold;}
+ a{font-size: 19px;}
+    
+}
+    img{height: 115px;
+        width: 115px;
+        margin: right 100px;
+        display: flex;
+        margin-right: 65px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+
+nav ul {
+ list-style: none;
+ padding: 0; /*overskrift*/
+
+}
+nav li {
+ display: inline;
+ margin-right: 20px; /*lenker*/
+}
+main { 
+ padding: 10px;
+}
+a {
+ color: #ffffff;
+ text-decoration-color: #ffffff;
+}
+
+/*HJEM*/
+
+
+
+/*OM PROSJEKTET*/
+
+section {
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 300px;
+
+    #bilde1 {
+   
+        width: 400px;
+         height: 400px;
+         border-radius: 50%;
+         object-fit: cover;
+         margin-left: 400px;
+         display: flex;
+     }
+}
+
+/*LØSNINGER RESULTAT IMPACT*/
+
+
+/*BÆREKRAFT OG MILJØ*/
+
+
+/*KONTAKT OSS*/
+
+
+
+
+  
+ /* Stiler for footer */
+ footer {
+    background-color: #114358;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  
+  
