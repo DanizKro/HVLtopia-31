@@ -1,0 +1,51 @@
+body {
+    background-image: url("Bilder/\ skyer.jpg");
+    background-size: cover;
+    background-attachment: fixed; /* Fiksert bakgrunn mens du ruller */
+    color:#000000;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+   }
+   
+   
+   h3 {
+    color: #ffffff;
+   }
+   
+   
+   header {
+    background-color: #2b97b5;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0; /* høgde */
+}
+nav ul {
+ list-style: none;
+ padding: 0; /*overskrift*/
+}
+nav li {
+ display: inline;
+ margin-right: 10px; /*lenker*/
+}
+main { 
+ padding: 20px;
+}
+a {
+ color: #ffffff;
+ text-decoration-color: #ffffff;
+}
+
+
+#hoved {
+ width: 65%;                /* bredde: 60 % av vinduet */
+ margin: 100px auto;        /* 100 px over elementet, auto midtstiller det */
+ padding: 40px;             /* luft mellom kantlinjene og innholdet */
+ background-color: white;   /* hvit bakgrunnsfarge */
+ border: 3px solid #f58f3c; /* rosa kantlinje */
+}
+#hoved2 {
+ width: 80%;
+ margin: 50px auto;
+ padding: 40px;
+ background-color: white; 
+ border: 3px solid #f58f3c;
+}
