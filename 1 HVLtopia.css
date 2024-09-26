@@ -1,9 +1,3 @@
-body {
-    background-size: cover;
-    background-attachment: fixed; /* Fiksert bakgrunn mens du ruller */
-    color:#000000;
-    font-family: Georgia, sans-serif;
-   }
    
 header {
     background-color: #114358;
