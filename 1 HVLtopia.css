@@ -1,4 +1,10 @@
-   
+body {
+    background-size: cover;
+    background-attachment: fixed; /* Fiksert bakgrunn mens du ruller */
+    color:#000000;
+    font-family: Georgia, sans-serif;
+   }
+
 header {
     background-color: #114358;
     color: #ffffff;
@@ -19,6 +25,29 @@ header {
         margin-top: 20px;
     }
 
+section {
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+/*bilde til til nettsiden */
+#bilde1 {
+   
+   width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 400px;
+    display: flex;
+}
+
+
+ .container {
+
+    display: flex;
+    align-items: center;
+ }
 
 nav ul {
  list-style: none;
@@ -70,6 +99,21 @@ section {
 
 
 
+<<<<<<< HEAD
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+=======
+>>>>>>> c3434b1bbee09a629c5df934d3ae70932d318145
   
  /* Stiler for footer */
  footer {
@@ -91,6 +135,9 @@ section {
   footer a:hover {
     text-decoration: underline;
   }
+<<<<<<< HEAD
+=======
 
   
   
+>>>>>>> c3434b1bbee09a629c5df934d3ae70932d318145
