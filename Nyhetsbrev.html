@@ -23,11 +23,12 @@
 </header>
 <body>
 
-  <h1>Her er ein påske krim!</h1>
-  <h3>Greier DU å løse den?</h3>
+  <h1>Meld deg på vårt nyhetsbrev </h1>
+  <div> Dette er hvorfor </div>
+
+  <br></br>
 
     <div>
-      <h1> Her kan du melde deg på og vinne kule premier </h1>
       <label for="Navn:">Navn</label>
       <input type="text" id="e-post">
 
@@ -44,67 +45,26 @@
 
       <label for="alder">Kjønn</label>
       <select id="alder">
-        <option value="ni">Vil ikkje dele</option>
-        <option value="ti">Hun</option>
-        <option value="seksten">Han</option>
-        <option value="nitten">Hen</option>
+        <option value="ikkje">Vil ikkje dele</option>
+        <option value="hun">Hun</option>
+        <option value="han">Han</option>
+        <option value="annet">Annet</option>
 
       </select>
   
       <div class="checkboxradio">
-        <h4>Ønsker du å få tilsendt reklame?</h4>
         <label>
-          <input type="radio" name="reklame"> Ja takk!
-        </label>
-        <label>
-          <input type="radio" name="reklame" checked> Nei takk!
+          <input type="radio" name="reklame"> JEG GODTAR AT DERE SENDER MEG NYHETSBREV, <br>OG ER INNFORSTÅTT MED VILKÅRENE FOR BRUK AV PERSONLIG INFORMASJON
         </label>
       </div>
+      <br></br>
       <button id="reloadButton">Registrer </button>
       <p id="displayText" style="display: none;">Informasjonen din er registrert</p>
      
       <div id="container" style="height: 100px; overflow-y: scroll;">
       </div>
 
-      <div class="bilde1">
-        <img src="Bilde/Påskekrim1.jpeg" alt="Påske">
-        </div>
-        
-        <div class="bilde2">
-        <img src="Bilde/Påskekrim2.jpeg" alt="Påske">
-        </div>
-        
-  
-
   <script>
-//video avspilling
-        let completionCount = 0;
-        const video = document.getElementById('video');
-
-        video.addEventListener('ended', function() {
-            completionCount++;
-            document.getElementById('completionCount').textContent = completionCount;
-        });
-
-        video.addEventListener('play', function() {
-            if (video.currentTime < 0 && !video.seeking) {
-                // Hvis videoen spilles fra starten uten å spole, nullstilles ikke fullførte avspillinger.
-                completionCount = 0;
-                document.getElementById('completionCount').textContent = completionCount;
-            }
-        });
-
-
-
-
-function disableOtherImages(selectedImage) {
-    const images = document.getElementsByTagName("img");
-    for (let i = 0; i < images.length; i++) {
-        if (images[i] !== selectedImage) {
-            images[i].removeAttribute("onclick");
-        }
-    }
-}
 // registrer knapp 
         // Finn knappelementet
     var displayText = document.getElementById('displayText');
@@ -113,10 +73,16 @@ function disableOtherImages(selectedImage) {
      // Vis tekstelementet når knappen blir klikket på
      displayText.style.display = 'block';
 });
-
-
-
-
   </script>
+
+<footer>
+  <p>&copy; 2024 HVLtopia.</p>
+  <a href="https://www.hvl.no" target="_blank">Hvl.no</a> | 
+  <a href="https://fn.no/om-fn/fns-baerekraftsmaal" target="_blank">Fn.no</a>
+  <p> epost: HVLtopia@gmail.com 
+    <br></br>
+    tlf: 973527920</p>
+</footer>
+
 </body>
 </html>
