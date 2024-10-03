@@ -142,9 +142,15 @@ h1, h2, h4  {
     clear: both;
     display: table;
   }
+<<<<<<< Updated upstream:1 HVLtopia.css
   
  /* Stiler for footer */
  footer {
+=======
+
+  /* Stiler for footer */
+footer {
+>>>>>>> Stashed changes:1 Header.css
     background-color: #114358;
     color: white;
     text-align: center;
