@@ -99,7 +99,6 @@ section {
 
 
 
-<<<<<<< HEAD
 .column {
     float: left;
     width: 33.33%;
@@ -112,8 +111,6 @@ section {
     clear: both;
     display: table;
   }
-=======
->>>>>>> c3434b1bbee09a629c5df934d3ae70932d318145
   
  /* Stiler for footer */
  footer {
@@ -135,9 +132,3 @@ section {
   footer a:hover {
     text-decoration: underline;
   }
-<<<<<<< HEAD
-=======
-
-  
-  
->>>>>>> c3434b1bbee09a629c5df934d3ae70932d318145
