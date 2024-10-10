@@ -74,6 +74,8 @@ a {
   transform: translate(90%, 50%); /* Bruk transformasjon for å sentrere bildet i forhold til forelder-elementet */
 }
 
+
+
 /*OM PROSJEKTET*/
 
 #om {
@@ -81,14 +83,67 @@ a {
     margin-left: 100px;
     margin-right: 400px;
     }
+
+#OmBakBilde {
+      background-image: url("Bilder/bryggen.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  
+#tittelOm {
+
+  width: 95%;
+  margin-right: 100px;
+  padding: 40px;
+  background-color: #f0fbff;
+  border: 3px solid #114358;
+  }
+
+
+#textOm1 {
+
+    width: 95%;
+    margin-right: 100px;
+    padding: 40px;
+    background-color: #f0fbff;
+    border: 3px solid #114358;
+    }
+  
+    #textOm2 {
+
+      width: 95%;
+      margin-right: 100px;
+      padding: 40px;
+      background-color: #f0fbff;
+      border: 3px solid #114358;
+      }
+
+      #textOm3 {
+
+        width: 95%;
+        margin-right: 100px;
+        padding: 40px;
+        background-color: #f0fbff;
+        border: 3px solid #114358;
+    
+        }
+
+        #textOm4 {
+
+          width: 85%;
+          margin-right: 100px;
+          padding: 40px;
+          background-color: #ffffff;
+          border: 3px solid #114358;
+      
+          }
+
 #bildeOm {
-  width: 200px; /* Sett bredden */
-  height: 200px; /* Sett høyden (må være lik bredden for perfekt sirkel) */
-  border-radius: 50%; /* Gjør bildet rundt */
-  object-fit: cover; /* Sikrer at bildet fyller hele sirkelen uten å forvrenges */
+  width: 400px; /* Sett bredden */
+  height: 400px; /* Sett høyden (må være lik bredden for perfekt sirkel) */
   position: absolute; /* Sett posisjon til absolutt for å kunne plassere bildet innenfor forelder-elementet */
-  top: 13%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
-  left: 60%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
+  top: 18%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
+  left: 30%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
   transform: translate(90%, 50%); /* Bruk transformasjon for å sentrere bildet i forhold til forelder-elementet */
 }
      
