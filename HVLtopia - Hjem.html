@@ -26,7 +26,7 @@
   <br></br>
 
 <div id="hoved">
-  <h4> Velkommen til HVLtopia - morgendagens løsninger! </h4>
+  <h2> Velkommen til HVLtopia - morgendagens løsninger! </h2>
  
   <h4>HVLtopia visjon</h4>
   <p> Det er stadig økende behov for bærekraftige og miljøvennlige løsninger for byutvikling. <br>
@@ -62,94 +62,33 @@
 <img src="Bilder/smarte_byer_final_forside_2000x980.jpg" alt="Rundt bilde" class="round-image2">
 
 
-
-<!--<div id="hoved">
-  <h4>Valgfagene eg har på skulen</h4>
-  <ul>
-    <li>Rettslære 1 og 2</li>
-    <li>Entrepenørskep 1 og 2</li>
-    <li>R1</li>
-    <li>Biologi 1</li>
-    <li>It 1</li>
-  </ul> 
+<div class="comment-section" id="commentSection">
+  <h2>Legg igjen en kommentar</h2>
+  <div class="comment-box">
+      <textarea id="comment" placeholder="Skriv din kommentar her..." rows="5"></textarea>
+      <button type="submit" id="submitComment">Send</button>
+  </div>
+  <div class="comments-list">
+      <h3>Kommentarer</h3>
+      <div id="commentsContainer"></div>
+  </div>
 </div>
-
-
- <h3>Om du hadde hatt mulighet å velge ett av faga eg har, vilke ville det vert?</h3>
-<select id="Fag">
-    <option value="Rettslære 1">Rettslære 1</option>
-    <option value="Rettslære 2">Rettslære 2</option>
-    <option value="Entrepenørskap 1">Entrepenørskap 1</option>
-    <option value="Entrepenørskap 2">Entrepenørskap 2</option>
-    <option value="R1">R1</option>
-    <option value="Biologi 1">Biologi 1</option>
-    <option value="It 1">It 1</option>
-  </select>
-
-  <div id="hoved3">
-    <p>Dette er min favoritt sang</p>
-    <audio controls>
-      <source src="Videoer/Lady Gaga - Poker Face.mp3" type="audio/mpeg">
-    </audio>
-  </div>
-  <div id="hoved3">
-    <a href="index_side2.html"><img src="Bilde/IMG_5638.JPG" width="150" height="200"></a>
-    <a href="index_side3.html"><img src="Bilde/IMG_5635.JPG" width="150" height="200"></a>
-    <p> Dette er linker til dans og Polo nettsiden</p>
-  </div> -->
-
-
-  <button id="showCommentField">Legg igjen en kommentar</button>
-
-  <div class="comment-section" id="commentSection" style="display: none;">
-      <h2>Legg igjen en kommentar</h2>
-      
-      <div class="comment-box">
-          <textarea id="comment" placeholder="Skriv din kommentar her..." rows="5"></textarea>
-          <button type="submit" id="submitComment">Send</button>
-      </div>
-      
-      <div class="comments-list">
-          <h3>Kommentarer</h3>
-          <!-- Her vises kommentarer etter innsending -->
-          <div id="commentsContainer"></div>
-      </div>
-  </div>
-
+<br></br>
   <script>
-// Funksjon for å vise kommentarfeltet
-document.getElementById('showCommentField').addEventListener('click', function() {
-    const commentSection = document.getElementById('commentSection');
-    
-    // Veksler mellom å vise/skjule kommentarfeltet
-    if (commentSection.style.display === "none") {
-        commentSection.style.display = "block";
-    } else {
-        commentSection.style.display = "none";
-    }
-});
-
 // Funksjon for å legge til kommentarer
 document.getElementById('submitComment').addEventListener('click', function() {
     const commentText = document.getElementById('comment').value;
 
     if (commentText.trim() !== "") {
-        // Lag et nytt div-element for kommentaren
         const commentDiv = document.createElement('div');
         commentDiv.classList.add('comment');
         commentDiv.innerText = commentText;
-
-        // Legg til kommentaren i listen
         document.getElementById('commentsContainer').appendChild(commentDiv);
-
-        // Tøm tekstområdet etter innsending
         document.getElementById('comment').value = "";
     } else {
         alert("Kommentarfeltet kan ikke være tomt.");
     }
 });
-
-
   </script>
 
   <footer>

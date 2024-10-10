@@ -45,7 +45,7 @@ a {
 
 /*HJEM*/
 #hoved {
-  width: 35%;
+  width: 40%;
   margin-right: 100px autox;
   padding: 40px;
   background-color: #1143581a;
@@ -53,78 +53,83 @@ a {
 }
 
 .round-image1 {
-  width: 200px; /* Sett bredden */
-  height: 200px; /* Sett høyden (må være lik bredden for perfekt sirkel) */
+  width: 350px; /* Sett bredden */
+  height: 350px; /* Sett høyden (må være lik bredden for perfekt sirkel) */
   border-radius: 50%; /* Gjør bildet rundt */
   object-fit: cover; /* Sikrer at bildet fyller hele sirkelen uten å forvrenges */
   position: absolute; /* Sett posisjon til absolutt for å kunne plassere bildet innenfor forelder-elementet */
-  top: 13%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
-  left: 60%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
+  top: 6%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
+  left: 50%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
   transform: translate(90%, 50%); /* Bruk transformasjon for å sentrere bildet i forhold til forelder-elementet */
 }
 
 .round-image2 {
-  width: 200px; /* Sett bredden */
-  height: 200px; /* Sett høyden (må være lik bredden for perfekt sirkel) */
+  width: 350px; /* Sett bredden */
+  height: 350px; /* Sett høyden (må være lik bredden for perfekt sirkel) */
   border-radius: 50%; /* Gjør bildet rundt */
   object-fit: cover; /* Sikrer at bildet fyller hele sirkelen uten å forvrenges */
   position: absolute; /* Sett posisjon til absolutt for å kunne plassere bildet innenfor forelder-elementet */
-  top: 25%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
-  left: 43%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
+  top: 24%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
+  left: 27%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
   transform: translate(90%, 50%); /* Bruk transformasjon for å sentrere bildet i forhold til forelder-elementet */
 }
 button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-bottom: 20px;
+  padding: 10px 20px; /* Innvendig padding for å gi knappen størrelse */
+  background-color: #114358; /* Bakgrunnsfarge */
+  color: white; /* Tekstfarge */
+  border: none; /* Ingen kantlinje */
+  border-radius: 4px; /* Runde hjørner */
+  cursor: pointer; /* Endrer musepekeren til håndsymbol når den er over knappen */
+  margin-bottom: 20px; /* Avstand under knappen */
+  font-size: 16px; /* Skriftstørrelse for teksten i knappen */
 }
-
 button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Endrer bakgrunnsfargen når musen er over knappen */
 }
 
 .comment-section {
-  max-width: 600px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-h2, h3 {
-  color: #333;
+  max-width: 600px; /* Maksimal bredde på kommentarfeltet */
+  background: #fff; /* Bakgrunnsfarge */
+  padding: 20px; /* Innvendig padding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+  border-radius: 8px; /* Runde hjørner */
+  margin: 20px auto; /* Sentraliserer kommentarfeltet horisontalt og gir litt avstand over og under */
+  text-align: left; /* Venstrejustert tekst */
+  max-height: 400px; /* Sett maksimal høyde for kommentarfeltet */
+  overflow-y: auto; /* Aktiver vertikal rulling når innholdet overskrider maksimal høyde */
+  position: absolute; /* Sett posisjon til absolutt for å kunne plassere bildet innenfor forelder-elementet */
+  top: 63%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
+  left: 50%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
+  transform: translate(90%, 50%); /* Bruk transformasjon for å sentrere bildet i forhold til forelder-elementet */
 }
 
 .comment-box {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+  display: flex; /* Fleksibel boks for kommentarinput */
+  flex-direction: column; /* Vertikal retning for innhold */
+  margin-bottom: 20px; /* Avstand under kommentarboksen */
 }
 
 textarea {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  resize: vertical;
-  margin-bottom: 10px;
-  font-size: 14px;
+  padding: 10px; /* Innvendig padding */
+  border: 1px solid #ddd; /* Grå kantlinje */
+  border-radius: 4px; /* Runde hjørner */
+  resize: vertical; /* Tillater vertikal resizing */
+  margin-bottom: 10px; /* Avstand under tekstområdet */
+  font-size: 14px; /* Skriftstørrelse */
 }
 
 .comments-list {
-  margin-top: 20px;
+  max-height: 300px; /* Sett maksimal høyde på kommentarlisten */
+  overflow-y: auto; /* Aktiver vertikal rulling når innholdet overskrider maksimal høyde */
+  margin-top: 20px; /* Avstand over kommentarlisten */
 }
 
 .comment {
-  background-color: #f9f9f9;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* Bakgrunnsfarge for individuelle kommentarer */
+  padding: 10px; /* Innvendig padding */
+  border-radius: 4px; /* Runde hjørner */
+  margin-bottom: 10px; /* Avstand under hver kommentar */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Skyggeeffekt for kommentarer */
 }
 
 
