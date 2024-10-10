@@ -223,8 +223,6 @@ body.løsningbilde {                                       /* kobler til html ve
 
 
 /*BÆREKRAFT OG MILJØ*/
-<<<<<<< Updated upstream
-=======
 
 #tekstBoks {
   width: 60%; /* gir plass til bildet, bare prøv deg fram */
@@ -254,7 +252,6 @@ body.løsningbilde {                                       /* kobler til html ve
   object-fit: cover;
   margin-top: 200px;
 }
->>>>>>> Stashed changes
 
 #bildeboks2{
   display: flex;
