@@ -26,6 +26,24 @@ header {
     }
 
 
+/*bilde til til nettsiden */
+#bilde1 {
+   
+   width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 400px;
+    display: flex;
+}
+
+
+ .container {
+
+    display: flex;
+    align-items: center;
+ }
+
 nav ul {
  list-style: none;
  padding: 0; /*overskrift*/
