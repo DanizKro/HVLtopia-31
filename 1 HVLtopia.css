@@ -223,7 +223,54 @@ body.løsningbilde {                                       /* kobler til html ve
 
 
 /*BÆREKRAFT OG MILJØ*/
+<<<<<<< Updated upstream
+=======
 
+#tekstBoks {
+  width: 60%; /* gir plass til bildet, bare prøv deg fram */
+  margin-left: 20px; 
+  padding: 40px;
+  background-color: #f0f0f0; 
+  border: 1px solid #ddd; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /*bare fin puss med tekst boksen*/
+  text-align: left; /* gjør at teksten går mer mot venstre*/
+}
+
+#tekstBoks h2, #tekstBoks p {
+  margin-bottom: 50px; /* lager mellomrom for fra avsnitt til boks*/
+}
+
+#bildeboks {
+  display: flex;
+  justify-content: flex-end; /* Plasserer bildet til høyre */
+  align-items: center; /* Sentraliserer bildet vertikalt */
+  margin-right: 20px; 
+}
+
+#bildeboksFn {
+  width: 300px; /* Sett bredden på bildet */
+  height: auto; 
+  border-radius: 0; /* Gjør bildet rundt */
+  object-fit: cover;
+  margin-top: 200px;
+}
+>>>>>>> Stashed changes
+
+#bildeboks2{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+}
+
+#berekraftbilde {
+  width: 300px; 
+  height: auto;
+  border-radius: 0;
+  object-fit:cover;
+  margin-top:1px;
+
+}
 
 
 
