@@ -233,7 +233,7 @@ body.løsningbilde {                                       /* kobler til html ve
 
 /*BÆREKRAFT OG MILJØ*/
 #tekstBoks {
-  width: 60%; /* gir plass til bildet, bare prøv deg fram */
+  width: 60%;                                             /* gir plass til bildet, bare prøv deg fram */
   margin-left: 20px; 
   padding: 40px;
   background-color: #f0f0f0; 
@@ -274,6 +274,16 @@ body.løsningbilde {                                       /* kobler til html ve
 
 
 /*KONTAKT OSS*/
+<<<<<<< Updated upstream
+=======
+
+body.fjellet {
+  background-image: url("Bilder/Fjellet.jpg");     /* velger bildet fra filene våre*/
+  background-size: cover;
+  background-position: center;
+}
+
+>>>>>>> Stashed changes
 body.kontaktbilde {
   background-image: url("Bilder/kontaktossbedre.jpg");     /* velger bildet fra filene våre*/
   background-size: cover;
