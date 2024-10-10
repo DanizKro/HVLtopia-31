@@ -132,29 +132,31 @@ textarea {
 
 /*OM PROSJEKTET*/
 
-#om {
+  #om {
     align-items: center;
     margin-left: 100px;
     margin-right: 400px;
     }
 
-#OmBakBilde {
+  #OmBakBilde {
       background-image: url("Bilder/bryggen.jpg");
       background-size: cover;
       background-position: center;
     }
   
-#tittelOm {
+  #tittelOm {
 
-  width: 95%;
+  width: 30%;
   margin-right: 100px;
-  padding: 40px;
+  padding: 10px;
   background-color: #f0fbff;
   border: 3px solid #114358;
+  font-size: larger;
+
   }
 
 
-#textOm1 {
+  #textOm1 {
 
     width: 95%;
     margin-right: 100px;
@@ -172,23 +174,23 @@ textarea {
       border: 3px solid #114358;
       }
 
-    #textOm3 {
+  #textOm3 {
 
-        width: 95%;
-        margin-right: 100px;
-        padding: 40px;
-        background-color: #f0fbff;
-        border: 3px solid #114358;
+      width: 95%;
+      margin-right: 100px;
+      padding: 40px;
+      background-color: #f0fbff;
+      border: 3px solid #114358;
     
         }
 
-    #textOm4 {
+  #textOm4 {
 
-          width: 85%;
-          margin-right: 100px;
-          padding: 40px;
-          background-color: #ffffff;
-          border: 3px solid #114358;
+      width: 85%;
+      margin-right: 100px;
+      padding: 40px;
+      background-color: #ffffff;
+      border: 3px solid #114358;
       
           }
 
@@ -221,40 +223,6 @@ body.løsningbilde {
 
 
 /*BÆREKRAFT OG MILJØ*/
-main {
-  display: flex; 
-  justify-content: space-between; 
-  align-items: flex-start; 
-  padding: 10px;
-}
-#tekstBoks {
-  width: 60%; /* gir plass til bildet, bare prøv deg fram */
-  margin-left: 20px; 
-  padding: 40px;
-  background-color: #f0f0f0; 
-  border: 1px solid #ddd; 
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /*bare fin puss med tekst boksen*/
-  text-align: left; /* gjør at teksten går mer mot venstre*/
-}
-
-#tekstBoks h2, #tekstBoks p {
-  margin-bottom: 50px; /* lager mellomrom for fra avsnitt til boks*/
-}
-
-#bildeboks {
-  display: flex;
-  justify-content: flex-end; /* Plasserer bildet til høyre */
-  align-items: center; /* Sentraliserer bildet vertikalt */
-  margin-right: 20px; 
-}
-
-#bildeboksFn {
-  width: 600px; /* Sett bredden på bildet */
-  height: auto; 
-  border-radius: 0; /* Gjør bildet rundt */
-  object-fit: cover; /* Sikrer at bildet fyller hele sirkelen uten å forvrenges */
-  margin-top: 200px;
-}
 
 
 
