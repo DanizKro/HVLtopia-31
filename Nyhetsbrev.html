@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="no">
+<head> 
+   <title> Nyhetsbrev  </title>
+   <!-- utf-8 gjør at vi kan bruke æ, ø og å -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="1 HVLtopia.css">
+</head>
+<header>
+  <img src="Bilder/hvl V logo.png" >
+  <nav>
+    <h1>HVLtopia</h1>
+    <ul>
+      <li><a href="HVLtopia - Hjem.html">Hjem</a></li>
+      <li><a href="HVLtopia om prosjektet.html">Om prosjektet</a></li>
+      <li><a href="HVLtopia Losninger, resultat og impact.html">Løsninger Resultat Impact</a></li>
+      <li><a href="HVLtopia_BerekraftOgsamfunnsansvar.html">Bærekraft og Miljø</a></li>
+      <li><a href="HVLtopia Kontakt og samarbeid.html">Kontakt og Samarbeid</a></li>
+      <li><a href="Nyhetsbrev.html">Nyhetsbrev</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+
+  <h1>Meld deg på vårt nyhetsbrev </h1>
+  <div> Dette er hvorfor </div>
+
+  <br></br>
+
+    <div>
+      <label for="Navn:">Navn</label>
+      <input type="text" id="e-post">
+
+      <label for="e-post">e-post:</label>
+      <input type="text" id="e-post" placeholder="@gmail.com">
+    
+      <label for="beskrivelse">Skriv en forklaring på hvorfor du trodde ... hadde gjort det?</label>
+      <textarea id="beskrivelse" placeholder="Eg trodde det var ... fordi "></textarea>
+    
+
+      <label for="aar">Årstall du blei føtt</label>
+      <input type="number" id="aar" placeholder="1900">
+    
+
+      <label for="alder">Kjønn</label>
+      <select id="alder">
+        <option value="ikkje">Vil ikkje dele</option>
+        <option value="hun">Hun</option>
+        <option value="han">Han</option>
+        <option value="annet">Annet</option>
+
+      </select>
+  
+      <div class="checkboxradio">
+        <label>
+          <input type="radio" name="reklame"> JEG GODTAR AT DERE SENDER MEG NYHETSBREV, <br>OG ER INNFORSTÅTT MED VILKÅRENE FOR BRUK AV PERSONLIG INFORMASJON
+        </label>
+      </div>
+      <br></br>
+      <button id="reloadButton">Registrer </button>
+      <p id="displayText" style="display: none;">Informasjonen din er registrert</p>
+     
+      <div id="container" style="height: 100px; overflow-y: scroll;">
+      </div>
+
+  <script>
+// registrer knapp 
+        // Finn knappelementet
+    var displayText = document.getElementById('displayText');
+        // Legg til en hendelselytter for klikkhendelse på knappen
+    reloadButton.addEventListener('click', function() {
+     // Vis tekstelementet når knappen blir klikket på
+     displayText.style.display = 'block';
+});
+  </script>
+
+<footer>
+  <p>&copy; 2024 HVLtopia.</p>
+  <a href="https://www.hvl.no" target="_blank">Hvl.no</a> | 
+  <a href="https://fn.no/om-fn/fns-baerekraftsmaal" target="_blank">Fn.no</a>
+  <p> epost: HVLtopia@gmail.com 
+    <br></br>
+    tlf: 973527920</p>
+</footer>
+
+</body>
+</html>
