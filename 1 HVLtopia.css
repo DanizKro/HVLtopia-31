@@ -205,15 +205,15 @@ textarea {
 
 /*LØSNINGER RESULTAT IMPACT*/
 
-body.løsningbilde {
-  background-image: url("Bilder/Bedre\ fløyen.jpg");
-  background-size: cover;
-  background-position: center;
+body.løsningbilde {                                       /* kobler til html ved navnet*/
+  background-image: url("Bilder/Bedre\ fløyen.jpg");      /* velger bilde*/
+  background-size: cover;                                 /* så det fyller heile sida*/
+  background-position: center;                            /* så den kommer i senter*/
 }
 
 
 #hovd1 {
-  width: 75%;
+  width: 75%;                                             /* tekst boksene*/
   margin-right: 100px;
   padding: 40px;
   background-color: #ffffffe1;
@@ -235,7 +235,7 @@ body.løsningbilde {
 /*KONTAKT OSS*/
 
 body.kontaktbilde {
-  background-image: url("Bilder/kontaktossbedre.jpg");
+  background-image: url("Bilder/kontaktossbedre.jpg");     /* velger bildet fra filene våre*/
   background-size: cover;
   background-position: center;
 }
