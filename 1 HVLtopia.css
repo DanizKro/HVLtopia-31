@@ -209,7 +209,7 @@ textarea {
 
 
 /*LØSNINGER RESULTAT IMPACT*/
-body.løsningbilde {                                       /* kobler til html ved navnet*/
+#losningBakgrunn {                                       /* kobler til html ved navnet*/
   background-image: url("Bilder/Bedre\ fløyen.jpg");      /* velger bilde*/
   background-size: cover;                                 /* så det fyller heile sida*/
   background-position: center;                            /* så den kommer i senter*/
