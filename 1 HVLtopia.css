@@ -113,7 +113,7 @@ a {
 /*LØSNINGER RESULTAT IMPACT*/
 
 body.løsningbilde {
-  background-image: url("Bilder/Bergen-natur.jpg");
+  background-image: url("Bilder/Bedre\ fløyen.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -123,16 +123,14 @@ body.løsningbilde {
   width: 75%;
   margin-right: 100px;
   padding: 40px;
-  background-color: #1143581a;
-  border: 3px solid #114358;
+  background-color: #bcbcbce1;
 }
 
 #hovd2 {
   width: 75%;
   margin-left: 200px;
   padding: 40px;
-  background-color: #1143581a;
-  border: 3px solid #114358;
+  background-color: #bcbcbce1;
 }
 
 
