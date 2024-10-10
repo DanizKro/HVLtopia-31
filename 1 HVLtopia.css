@@ -63,7 +63,13 @@ a {
 }
 
 /*HJEM*/
-
+#hoved {
+  width: 40%;
+  margin-right: 100px autox;
+  padding: 40px;
+  background-color: #1143581a;
+  border: 3px solid #114358;
+}
 
 
 /*OM PROSJEKTET*/
