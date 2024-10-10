@@ -89,6 +89,21 @@ section {
 }
 
 /*LØSNINGER RESULTAT IMPACT*/
+#hovd1 {
+  width: 120%;
+  margin-right: 100px;
+  padding: 40px;
+  background-color: #1143581a;
+  border: 3px solid #114358;
+}
+
+#hovd2 {
+  width: 120%;
+  margin-right: 500px;
+  padding: 40px;
+  background-color: #1143581a;
+  border: 3px solid #114358;
+}
 
 
 /*BÆREKRAFT OG MILJØ*/
