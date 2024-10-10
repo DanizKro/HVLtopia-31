@@ -163,7 +163,7 @@ textarea {
     border: 3px solid #114358;
     }
   
-    #textOm2 {
+  #textOm2 {
 
       width: 95%;
       margin-right: 100px;
@@ -172,7 +172,7 @@ textarea {
       border: 3px solid #114358;
       }
 
-      #textOm3 {
+    #textOm3 {
 
         width: 95%;
         margin-right: 100px;
@@ -182,7 +182,7 @@ textarea {
     
         }
 
-        #textOm4 {
+    #textOm4 {
 
           width: 85%;
           margin-right: 100px;
@@ -192,14 +192,7 @@ textarea {
       
           }
 
-#bildeOm {
-  width: 400px; /* Sett bredden */
-  height: 400px; /* Sett høyden (må være lik bredden for perfekt sirkel) */
-  position: absolute; /* Sett posisjon til absolutt for å kunne plassere bildet innenfor forelder-elementet */
-  top: 18%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
-  left: 30%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
-  transform: translate(90%, 50%); /* Bruk transformasjon for å sentrere bildet i forhold til forelder-elementet */
-}
+
      
 
 
