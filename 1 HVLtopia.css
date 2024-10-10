@@ -173,14 +173,39 @@ body.løsningbilde {
 
 
 /*BÆREKRAFT OG MILJØ*/
-/*#bildeboksFn{
-  width: 800px;
-  height: 800px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-left: 400px;
-  display: flex;
+main {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  padding: 10px;
+}
+#tekstBoks {
+  width: 60%; /* gir plass til bildet, bare prøv deg fram */
+  margin-left: 20px; 
+  padding: 40px;
+  background-color: #f0f0f0; 
+  border: 1px solid #ddd; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /*bare fin puss med tekst boksen*/
+  text-align: left; /* gjør at teksten går mer mot venstre*/
+}
 
+#tekstBoks h2, #tekstBoks p {
+  margin-bottom: 50px; /* lager mellomrom for fra avsnitt til boks*/
+}
+
+#bildeboks {
+  display: flex;
+  justify-content: flex-end; /* Plasserer bildet til høyre */
+  align-items: center; /* Sentraliserer bildet vertikalt */
+  margin-right: 20px; 
+}
+
+#bildeboksFn {
+  width: 600px; /* Sett bredden på bildet */
+  height: auto; 
+  border-radius: 0; /* Gjør bildet rundt */
+  object-fit: cover; /* Sikrer at bildet fyller hele sirkelen uten å forvrenges */
+  margin-top: 200px;
 }
 
 
