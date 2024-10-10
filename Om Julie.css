@@ -1,0 +1,91 @@
+/* Generelle stiler */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #000; /* Svart bakgrunn */
+    color: #e0e0e0; /* Lys tekst */
+    line-height: 1.6;
+}
+
+/* Farger */
+:root {
+    --mørk-blå: #0a1f44; 
+    --lysegrå: #e0e0e0; 
+}
+
+/* Header-stiler */
+header {
+    background-color: var(--mørk-blå); 
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--lysegrå); 
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--lysegrå);
+}
+
+/* Om-seksjon */
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    border: 2px solid var(--mørk-blå); /* Mørk blå kant */
+}
+
+.text-container {
+    width: 50%;
+    padding: 1rem;
+    text-align: left;
+}
+
+.text-container h2 {
+    color: var(--lysegrå);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--lysegrå);
+    max-width: 500px;
+}
+
+/* Bildeseksjon */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    border: 2px solid var(--mørk-blå); /* Mørk blå bordert rundt bildene */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Diskré skygge for dybde */
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Enkel zoom-effekt ved hover */
+}
+
+/* Footer */
+footer {
+    background-color: var(--mørk-blå); /* Mørk blå footer */
+    color: var(--lysegrå);
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid var(--lysegrå);
+    font-size: 0.9rem;
+}
