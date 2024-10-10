@@ -233,7 +233,7 @@ body.løsningbilde {                                       /* kobler til html ve
 
 /*BÆREKRAFT OG MILJØ*/
 #tekstBoks {
-  width: 60%; /* gir plass til bildet, bare prøv deg fram */
+  width: 60%;                                             /* gir plass til bildet, bare prøv deg fram */
   margin-left: 20px; 
   padding: 40px;
   background-color: #f0f0f0; 
