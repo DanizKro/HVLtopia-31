@@ -53,83 +53,83 @@ a {
 }
 
 .round-image1 {
-  width: 350px; /* Sett bredden */
-  height: 350px; /* Sett høyden (må være lik bredden for perfekt sirkel) */
-  border-radius: 50%; /* Gjør bildet rundt */
-  object-fit: cover; /* Sikrer at bildet fyller hele sirkelen uten å forvrenges */
-  position: absolute; /* Sett posisjon til absolutt for å kunne plassere bildet innenfor forelder-elementet */
-  top: 6%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
-  left: 50%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
-  transform: translate(90%, 50%); /* Bruk transformasjon for å sentrere bildet i forhold til forelder-elementet */
+  width: 350px; 
+  height: 350px; 
+  border-radius: 50%; /* rundt bilde */
+  object-fit: cover; /* bilde fyller ut surkelen */
+  position: absolute;
+  top: 6%; /* % fra toppen */
+  left: 50%; /* % fra høgre side */
+  transform: translate(90%, 50%); /* sentrere bilde i mitten*/
 }
 
 .round-image2 {
-  width: 350px; /* Sett bredden */
-  height: 350px; /* Sett høyden (må være lik bredden for perfekt sirkel) */
-  border-radius: 50%; /* Gjør bildet rundt */
-  object-fit: cover; /* Sikrer at bildet fyller hele sirkelen uten å forvrenges */
-  position: absolute; /* Sett posisjon til absolutt for å kunne plassere bildet innenfor forelder-elementet */
-  top: 24%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
-  left: 27%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
-  transform: translate(90%, 50%); /* Bruk transformasjon for å sentrere bildet i forhold til forelder-elementet */
+  width: 350px; 
+  height: 350px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  position: absolute; 
+  top: 24%; 
+  left: 27%; 
+  transform: translate(90%, 50%); 
 }
 button {
-  padding: 10px 20px; /* Innvendig padding for å gi knappen størrelse */
-  background-color: #114358; /* Bakgrunnsfarge */
-  color: white; /* Tekstfarge */
-  border: none; /* Ingen kantlinje */
-  border-radius: 4px; /* Runde hjørner */
-  cursor: pointer; /* Endrer musepekeren til håndsymbol når den er over knappen */
-  margin-bottom: 20px; /* Avstand under knappen */
-  font-size: 16px; /* Skriftstørrelse for teksten i knappen */
+  padding: 10px 20px; /* innvendig padding */
+  background-color: #114358; 
+  color: white; 
+  border: none; /* ingen kantlinje */
+  border-radius: 4px; /* runde hjørner */
+  cursor: pointer; /* endrer musepekeren til håndsymbol*/
+  margin-bottom: 20px; 
+  font-size: 16px; 
 }
 button:hover {
-  background-color: #0056b3; /* Endrer bakgrunnsfargen når musen er over knappen */
+  background-color: #0056b3; 
 }
 
 .comment-section {
-  max-width: 600px; /* Maksimal bredde på kommentarfeltet */
-  background: #fff; /* Bakgrunnsfarge */
-  padding: 20px; /* Innvendig padding */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
-  border-radius: 8px; /* Runde hjørner */
-  margin: 20px auto; /* Sentraliserer kommentarfeltet horisontalt og gir litt avstand over og under */
-  text-align: left; /* Venstrejustert tekst */
-  max-height: 400px; /* Sett maksimal høyde for kommentarfeltet */
-  overflow-y: auto; /* Aktiver vertikal rulling når innholdet overskrider maksimal høyde */
-  position: absolute; /* Sett posisjon til absolutt for å kunne plassere bildet innenfor forelder-elementet */
-  top: 63%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
-  left: 50%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
-  transform: translate(90%, 50%); /* Bruk transformasjon for å sentrere bildet i forhold til forelder-elementet */
+  max-width: 600px; /* bredde på kommentarfeltet */
+  background: #fff; 
+  padding: 20px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* skyggeeffekt */
+  border-radius: 8px; 
+  margin: 20px auto; /* sentraliserer kommentarfeltet */
+  text-align: left; /* venstrejustert tekst */
+  max-height: 400px; 
+  overflow-y: auto; /* rulle kommentarfeltet */
+  position: absolute; 
+  top: 63%; 
+  left: 50%; 
+  transform: translate(90%, 50%); 
 }
 
 .comment-box {
-  display: flex; /* Fleksibel boks for kommentarinput */
-  flex-direction: column; /* Vertikal retning for innhold */
-  margin-bottom: 20px; /* Avstand under kommentarboksen */
+  display: flex; /* fleksibel boks for kommentarinput */
+  flex-direction: column; 
+  margin-bottom: 20px; 
 }
 
 textarea {
-  padding: 10px; /* Innvendig padding */
-  border: 1px solid #ddd; /* Grå kantlinje */
-  border-radius: 4px; /* Runde hjørner */
-  resize: vertical; /* Tillater vertikal resizing */
-  margin-bottom: 10px; /* Avstand under tekstområdet */
-  font-size: 14px; /* Skriftstørrelse */
+  padding: 10px; 
+  border: 1px solid #ddd; 
+  border-radius: 4px;
+  resize: vertical; /* vertikal resizing */
+  margin-bottom: 10px; 
+  font-size: 14px; 
 }
 
 .comments-list {
-  max-height: 300px; /* Sett maksimal høyde på kommentarlisten */
-  overflow-y: auto; /* Aktiver vertikal rulling når innholdet overskrider maksimal høyde */
-  margin-top: 20px; /* Avstand over kommentarlisten */
+  max-height: 300px; 
+  overflow-y: auto; 
+  margin-top: 20px; /* avstand over kommentarlisten */
 }
 
 .comment {
-  background-color: #f9f9f9; /* Bakgrunnsfarge for individuelle kommentarer */
-  padding: 10px; /* Innvendig padding */
-  border-radius: 4px; /* Runde hjørner */
-  margin-bottom: 10px; /* Avstand under hver kommentar */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Skyggeeffekt for kommentarer */
+  background-color: #f9f9f9; 
+  padding: 10px; 
+  border-radius: 4px; 
+  margin-bottom: 10px; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
 }
 
 
