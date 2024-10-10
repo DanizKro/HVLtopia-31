@@ -9,7 +9,7 @@ header {
     background-color: #114358;
     color: #ffffff;
     text-align: center;
-    padding: 10px 0; /* høgde */
+    padding: 15px 0; /* høgde */
     display: flex;
   h1{font-size:50px;
      font:bold;}
@@ -130,15 +130,22 @@ textarea {
 
 
 
-/*OM PROSJEKTET*/
+/* OM PROSJEKTET SIN CSS */
 
   #om {
+
+    /* marg rundt tekst slik bilde i bakgrunn kommer frem */
+
     align-items: center;
     margin-left: 100px;
     margin-right: 400px;
+    
     }
 
   #OmBakBilde {
+
+    /* bakgrunnsbilde */
+
       background-image: url("Bilder/bryggen.jpg");
       background-size: cover;
       background-position: center;
@@ -146,54 +153,53 @@ textarea {
   
   #tittelOm {
 
-  width: 30%;
-  margin-right: 100px;
+    /* css til tittel */
+
+  width: 100%;
+  margin-right: 85px;
+  margin-left: 5px;
   padding: 10px;
-  background-color: #f0fbff;
+  background-color: #ffffff;
   border: 3px solid #114358;
   font-size: larger;
+  text-align: center;
 
   }
 
+  #overskrift{
 
-  #textOm1 {
+    /*css til overskrift*/
+
+    width: 20%;
+    padding: 2%;
+    text-align:center;
+    background-color: #ffffff;  
+    border: 3px solid #114358;
+  }
+
+  #textOm1 { 
+
+    /* Ramme rundt tekst */
 
     width: 95%;
     margin-right: 100px;
     padding: 40px;
-    background-color: #f0fbff;
-    border: 3px solid #114358;
+    background-color: #f0fbffdd;
     }
   
   #textOm2 {
 
-      width: 95%;
-      margin-right: 100px;
-      padding: 40px;
-      background-color: #f0fbff;
-      border: 3px solid #114358;
+    /* tekst avsnitt */
+
+    width: 85%;
+    margin-right: 100px;
+    padding: 40px;
+    background-color: #ffffff;
+    border: 3px solid #114358;
+
       }
 
-  #textOm3 {
-
-      width: 95%;
-      margin-right: 100px;
-      padding: 40px;
-      background-color: #f0fbff;
-      border: 3px solid #114358;
     
-        }
-
-  #textOm4 {
-
-      width: 85%;
-      margin-right: 100px;
-      padding: 40px;
-      background-color: #ffffff;
-      border: 3px solid #114358;
-      
-          }
-
 
      
 
