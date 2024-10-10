@@ -1,0 +1,65 @@
+body {
+    background-size: cover;
+    background-attachment: fixed; /* Fiksert bakgrunn mens du ruller */
+    color:#000000;
+    font-family: Georgia, sans-serif;
+   }
+
+header {
+    background-color: #114358;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0; /* høgde */
+    display: flex;
+  h1{font-size:50px;
+     font:bold;}
+ a{font-size: 19px;}
+    
+}
+
+img{
+    margin: right 100px;
+    display: flex;
+    margin-right: 65px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+nav ul {
+ list-style: none;
+ padding: 0; /*overskrift*/
+
+}
+nav li {
+ display: inline;
+ margin-right: 20px; /*lenker*/
+}
+main { 
+ padding: 10px;
+}
+a {
+ color: #ffffff;
+ text-decoration-color: #ffffff;
+}
+
+
+ /* Stiler for footer */
+ footer {
+    background-color: #114358;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
