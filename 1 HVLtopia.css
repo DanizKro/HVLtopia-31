@@ -274,8 +274,6 @@ body.løsningbilde {                                       /* kobler til html ve
 
 
 /*KONTAKT OSS*/
-<<<<<<< Updated upstream
-=======
 
 body.fjellet {
   background-image: url("Bilder/Fjellet.jpg");     /* velger bildet fra filene våre*/
@@ -283,7 +281,6 @@ body.fjellet {
   background-position: center;
 }
 
->>>>>>> Stashed changes
 body.kontaktbilde {
   background-image: url("Bilder/kontaktossbedre.jpg");     /* velger bildet fra filene våre*/
   background-size: cover;
@@ -335,14 +332,7 @@ h1, h2, h4  {
     width: 33.33%;
     padding: 5px;
   }
-  /* Sgrid nettside */
-  body.løsningbilde {                                       /* kobler til html ved navnet*/
-    background-image: url("Bilder/Glitter.jpg");      /* velger bilde*/
-    background-size: cover;                                 /* så det fyller heile sida*/
-    background-position: center;                            /* så den kommer i senter*/
-  }
-
-
+  
   /* Clear floats after image containers */
   .row::after {
     content: "";
@@ -370,4 +360,3 @@ h1, h2, h4  {
   footer a:hover {
     text-decoration: underline;
   }
-
