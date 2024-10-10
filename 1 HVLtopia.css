@@ -70,17 +70,17 @@ a {
 
 #om {
     align-items: center;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 100px;
+    margin-right: 400px;
     }
-    #bilde1 {
+#bildeOm {
    
-        width: 400px;
-         height: 400px;
-         border-radius: 50%;
-         object-fit: cover;
-         margin-left: 400px;
-         display: flex;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-left: 400px;
+      display: flex;
      }
 
 
