@@ -77,6 +77,60 @@
     <p> Dette er linker til dans og Polo nettsiden</p>
   </div> -->
 
+
+  <button id="showCommentField">Legg igjen en kommentar</button>
+
+  <div class="comment-section" id="commentSection" style="display: none;">
+      <h2>Legg igjen en kommentar</h2>
+      
+      <div class="comment-box">
+          <textarea id="comment" placeholder="Skriv din kommentar her..." rows="5"></textarea>
+          <button type="submit" id="submitComment">Send</button>
+      </div>
+      
+      <div class="comments-list">
+          <h3>Kommentarer</h3>
+          <!-- Her vises kommentarer etter innsending -->
+          <div id="commentsContainer"></div>
+      </div>
+  </div>
+
+  <script>
+// Funksjon for å vise kommentarfeltet
+document.getElementById('showCommentField').addEventListener('click', function() {
+    const commentSection = document.getElementById('commentSection');
+    
+    // Veksler mellom å vise/skjule kommentarfeltet
+    if (commentSection.style.display === "none") {
+        commentSection.style.display = "block";
+    } else {
+        commentSection.style.display = "none";
+    }
+});
+
+// Funksjon for å legge til kommentarer
+document.getElementById('submitComment').addEventListener('click', function() {
+    const commentText = document.getElementById('comment').value;
+
+    if (commentText.trim() !== "") {
+        // Lag et nytt div-element for kommentaren
+        const commentDiv = document.createElement('div');
+        commentDiv.classList.add('comment');
+        commentDiv.innerText = commentText;
+
+        // Legg til kommentaren i listen
+        document.getElementById('commentsContainer').appendChild(commentDiv);
+
+        // Tøm tekstområdet etter innsending
+        document.getElementById('comment').value = "";
+    } else {
+        alert("Kommentarfeltet kan ikke være tomt.");
+    }
+});
+
+
+  </script>
+
   <footer>
     <p>&copy; 2024 HVLtopia.</p>
     <a href="https://www.hvl.no" target="_blank">Hvl.no</a> | 
