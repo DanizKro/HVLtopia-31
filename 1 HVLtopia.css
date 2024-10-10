@@ -26,6 +26,24 @@ header {
     }
 
 
+/*bilde til til nettsiden */
+#bilde1 {
+   
+   width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 400px;
+    display: flex;
+}
+
+
+ .container {
+
+    display: flex;
+    align-items: center;
+ }
+
 nav ul {
  list-style: none;
  padding: 0; /*overskrift*/
@@ -44,8 +62,35 @@ a {
 }
 
 /*HJEM*/
+#hoved {
+  width: 35%;
+  margin-right: 100px autox;
+  padding: 40px;
+  background-color: #1143581a;
+  border: 3px solid #114358;
+}
 
+.round-image1 {
+  width: 200px; /* Sett bredden */
+  height: 200px; /* Sett høyden (må være lik bredden for perfekt sirkel) */
+  border-radius: 50%; /* Gjør bildet rundt */
+  object-fit: cover; /* Sikrer at bildet fyller hele sirkelen uten å forvrenges */
+  position: absolute; /* Sett posisjon til absolutt for å kunne plassere bildet innenfor forelder-elementet */
+  top: 13%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
+  left: 60%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
+  transform: translate(90%, 50%); /* Bruk transformasjon for å sentrere bildet i forhold til forelder-elementet */
+}
 
+.round-image2 {
+  width: 200px; /* Sett bredden */
+  height: 200px; /* Sett høyden (må være lik bredden for perfekt sirkel) */
+  border-radius: 50%; /* Gjør bildet rundt */
+  object-fit: cover; /* Sikrer at bildet fyller hele sirkelen uten å forvrenges */
+  position: absolute; /* Sett posisjon til absolutt for å kunne plassere bildet innenfor forelder-elementet */
+  top: 25%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
+  left: 43%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
+  transform: translate(90%, 50%); /* Bruk transformasjon for å sentrere bildet i forhold til forelder-elementet */
+}
 
 /*OM PROSJEKTET*/
 
@@ -66,8 +111,16 @@ a {
 
 
 /*LØSNINGER RESULTAT IMPACT*/
+
+body.løsningbilde {
+  background-image: url("Bilder/Bergen-natur.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
 #hovd1 {
-  width: 120%;
+  width: 75%;
   margin-right: 100px;
   padding: 40px;
   background-color: #1143581a;
@@ -75,8 +128,8 @@ a {
 }
 
 #hovd2 {
-  width: 120%;
-  margin-right: 500px;
+  width: 75%;
+  margin-left: 200px;
   padding: 40px;
   background-color: #1143581a;
   border: 3px solid #114358;
