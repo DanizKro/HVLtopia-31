@@ -73,6 +73,60 @@ a {
   left: 43%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
   transform: translate(90%, 50%); /* Bruk transformasjon for å sentrere bildet i forhold til forelder-elementet */
 }
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.comment-section {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2, h3 {
+  color: #333;
+}
+
+.comment-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.comments-list {
+  margin-top: 20px;
+}
+
+.comment {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
 
 
 
@@ -152,7 +206,7 @@ a {
 /*LØSNINGER RESULTAT IMPACT*/
 
 body.løsningbilde {
-  background-image: url("Bilder/Bergen-natur.jpg");
+  background-image: url("Bilder/Bedre\ fløyen.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -162,16 +216,14 @@ body.løsningbilde {
   width: 75%;
   margin-right: 100px;
   padding: 40px;
-  background-color: #1143581a;
-  border: 3px solid #114358;
+  background-color: #ffffffe1;
 }
 
 #hovd2 {
   width: 75%;
   margin-left: 200px;
   padding: 40px;
-  background-color: #1143581a;
-  border: 3px solid #114358;
+  background-color: #ffffffe1;
 }
 
 
@@ -182,6 +234,18 @@ body.løsningbilde {
 
 /*KONTAKT OSS*/
 
+body.kontaktbilde {
+  background-image: url("Bilder/kontaktossbedre.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#Kontakt1 {
+  width: 75%;
+  margin-right: 100px;
+  padding: 40px;
+  background-color: #ffffffe1;
+}
 
 /* NYHETSBREV */
 h1, h2, h4  {
