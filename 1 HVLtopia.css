@@ -107,14 +107,14 @@ body.løsningbilde {
   width: 75%;
   margin-right: 100px;
   padding: 40px;
-  background-color: #bcbcbce1;
+  background-color: #ffffffe1;
 }
 
 #hovd2 {
   width: 75%;
   margin-left: 200px;
   padding: 40px;
-  background-color: #bcbcbce1;
+  background-color: #ffffffe1;
 }
 
 
@@ -125,6 +125,18 @@ body.løsningbilde {
 
 /*KONTAKT OSS*/
 
+body.kontaktbilde {
+  background-image: url("Bilder/kontaktossbedre.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#Kontakt1 {
+  width: 75%;
+  margin-right: 100px;
+  padding: 40px;
+  background-color: #ffffffe1;
+}
 
 /* NYHETSBREV */
 h1, h2, h4  {
