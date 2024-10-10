@@ -274,16 +274,6 @@ body.løsningbilde {                                       /* kobler til html ve
 
 
 /*KONTAKT OSS*/
-<<<<<<< Updated upstream
-=======
-
-body.fjellet {
-  background-image: url("Bilder/Fjellet.jpg");     /* velger bildet fra filene våre*/
-  background-size: cover;
-  background-position: center;
-}
-
->>>>>>> Stashed changes
 body.kontaktbilde {
   background-image: url("Bilder/kontaktossbedre.jpg");     /* velger bildet fra filene våre*/
   background-size: cover;
