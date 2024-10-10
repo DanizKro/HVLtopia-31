@@ -332,6 +332,13 @@ h1, h2, h4  {
     width: 33.33%;
     padding: 5px;
   }
+
+  /* Om Sigrid */
+  body.løsningbilde {                                       /* kobler til html ved navnet*/
+    background-image: url("Bilder/Glitter.jpg");      /* velger bilde*/
+    background-size: cover;                                 /* så det fyller heile sida*/
+    background-position: center;                            /* så den kommer i senter*/
+  }
   
   /* Clear floats after image containers */
   .row::after {
