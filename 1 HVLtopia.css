@@ -221,7 +221,7 @@ body.løsningbilde {                                       /* kobler til html ve
 
 #hovd2 {
   width: 75%;
-  margin-left: 200px;
+  margin-left: 100px;
   padding: 40px;
   background-color: #ffffffe1;
 }
@@ -245,34 +245,28 @@ body.løsningbilde {                                       /* kobler til html ve
 
 #bildeboks {
   display: flex;
-  justify-content: flex-end; /* Plasserer bildet til høyre */
-  align-items: center; /* Sentraliserer bildet vertikalt */
-  margin-right: 20px; 
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 20px; 
 }
 
 #bildeboksFn {
-  width: 300px; /* Sett bredden på bildet */
-  height: auto; 
-  border-radius: 0; /* Gjør bildet rundt */
+  width: 300px; 
+  height: 200px;
   object-fit: cover;
-  margin-top: 200px;
-}
-
-#bildeboks2{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 #berekraftbilde {
   width: 300px; 
-  height: auto;
-  border-radius: 0;
-  object-fit:cover;
-  margin-top:1px;
-
+  height: auto; 
 }
+
+#berekraftbilde2 {
+  width: 300px; 
+  height: auto; 
+}
+
 
 
 
