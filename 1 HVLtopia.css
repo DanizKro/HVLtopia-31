@@ -25,11 +25,7 @@ header {
         margin-top: 20px;
     }
 
-section {
-    align-items: center;
-    margin-left: 300px;
-    margin-right: 300px;
-}
+
 
 /*bilde til til nettsiden */
 #bilde1 {
@@ -72,11 +68,11 @@ a {
 
 /*OM PROSJEKTET*/
 
-section {
+#om {
     align-items: center;
     margin-left: 300px;
     margin-right: 300px;
-
+    }
     #bilde1 {
    
         width: 400px;
@@ -86,7 +82,7 @@ section {
          margin-left: 400px;
          display: flex;
      }
-}
+
 
 /*LØSNINGER RESULTAT IMPACT*/
 #hovd1 {
