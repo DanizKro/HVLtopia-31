@@ -217,6 +217,12 @@ body.løsningbilde {                                       /* kobler til html ve
 
 /*BÆREKRAFT OG MILJØ*/
 
+body.miljo {
+  background-image: url("Bilder/smarte_byer_final_forside_2000x980.jpg");      /* velger bilde*/
+  background-size: cover;                                 /* så det fyller heile sida*/
+  background-position: center;                            /* så den kommer i senter*/
+}
+
 
 
 
