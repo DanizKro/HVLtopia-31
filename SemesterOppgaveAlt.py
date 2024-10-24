@@ -37,9 +37,9 @@ krnon_nox_year = GenereateRandomYearDataList(intencity=1.0, seed = 2)
 nord_nox_year = GenereateRandomYearDataList(intencity=.3, seed = 1)
 
 #create figure and 3 axis
-fig = plt.figure(figsize=(13, 5))
+fig = plt.figure(figsize=(6, 5))
 
-axNox = fig.add_axes((0.05, 0.05, 0.45, 0.9))
+axNox = fig.add_axes((0.05, 0.05, 0.9, 0.9))
 
 quarterYear =  int(input("Kvartal 1-4  (0=Hele Året)  : "))
 
@@ -70,6 +70,7 @@ def get_interval():
     return days_interval
 
 def plot_graph():
+    fig.patch.set_facecolor('lightblue')
 
     days_interval = get_interval()
     nord_nox = nord_nox_year[days_interval[0]:days_interval[1]]
@@ -77,13 +78,15 @@ def plot_graph():
     days = len(nord_nox)
     list_days = np.linspace(1, days, days)
 
-    l1, = axNox.plot(list_days, nord_nox, 'blue')
-    l2, = axNox.plot(list_days, kron_nox, 'red')
+    l1, = axNox.plot(list_days, nord_nox, 'blue',linewidth=4)
+
+    l2, = axNox.plot(list_days, kron_nox, 'red',linewidth=4)
 
 
     lines = [l1, l2]
     axNox.legend(lines, ["Nordnes", "Kronstad"])
     axNox.grid(linestyle='--')
+
 
     plt.draw()
 
