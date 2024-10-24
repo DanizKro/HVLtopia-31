@@ -33,8 +33,10 @@ def GenereateRandomYearDataList(intencity:float, seed:int=0) -> list[int]:
         noxList.append(nox)
     return noxList
 
-krnon_nox_year = GenereateRandomYearDataList(intencity=1.0, seed = 2)
+kron_nox_year = GenereateRandomYearDataList(intencity=1.0, seed = 2)
 nord_nox_year = GenereateRandomYearDataList(intencity=.3, seed = 1)
+bryggen_nox_year= GenereateRandomYearDataList(intencity=1, seed=3)
+asfaltstov_nox_year= GenereateRandomYearDataList(intencity=1.5, seed=4)
 
 #create figure and 3 axis
 fig = plt.figure(figsize=(6, 5))
@@ -74,17 +76,23 @@ def plot_graph():
 
     days_interval = get_interval()
     nord_nox = nord_nox_year[days_interval[0]:days_interval[1]]
-    kron_nox = krnon_nox_year[days_interval[0]:days_interval[1]]
+    kron_nox = kron_nox_year[days_interval[0]:days_interval[1]]
+    bryggen_nox = bryggen_nox_year[days_interval[0]:days_interval[1]]
+    asfaltstov_nox =asfaltstov_nox_year[days_interval[0]:days_interval[1]]
     days = len(nord_nox)
     list_days = np.linspace(1, days, days)
 
     l1, = axNox.plot(list_days, nord_nox, 'blue',linewidth=4)
 
     l2, = axNox.plot(list_days, kron_nox, 'red',linewidth=4)
+    l1, = axNox.plot(list_days, nord_nox, 'blue')
+    l2, = axNox.plot(list_days, kron_nox, 'red')
+    l3, = axNox.plot(list_days, bryggen_nox, 'green')
+    l4, = axNox.plot(list_days, asfaltstov_nox, 'orange')
 
 
-    lines = [l1, l2]
-    axNox.legend(lines, ["Nordnes", "Kronstad"])
+    lines = [l1, l2, l3, l4]
+    axNox.legend(lines, ["Nordnes", "Kronstad","Bryggen","Asfaltstøv"])
     axNox.grid(linestyle='--')
 
 
