@@ -91,10 +91,10 @@ def plot_graph():
     days = len(nord_nox)
     list_days = np.linspace(1, days, days)
 
-    l1, = axNox.plot(list_days, nord_nox, 'blue',linewidth=4)
-    l2, = axNox.plot(list_days, kron_nox, 'red',linewidth=4)
-    l3, = axNox.plot(list_days, bryggen_nox, 'green',linewidth=4)
-    l4, = axNox.plot(list_days, asfaltstov_nox, 'orange',linewidth=4)
+    l1, = axNox.plot(list_days, nord_nox, 'blue',linewidth=3)
+    l2, = axNox.plot(list_days, kron_nox, 'red',linewidth=3)
+    l3, = axNox.plot(list_days, bryggen_nox, 'green',linewidth=3)
+    l4, = axNox.plot(list_days, asfaltstov_nox, 'orange',linewidth=3)
 
 
     lines = [l1, l2, l3, l4]
