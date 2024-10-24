@@ -44,12 +44,20 @@ fig = plt.figure(figsize=(13, 5))
 axNox = fig.add_axes((0.05, 0.05, 0.45, 0.9))
 
 quarterYear =  int(input("Kvartal 1-4  (0=Hele Året)  : "))
+startDag = int(input("skriv inn start dag "))
+sluttDag = int(input("skriv inn slutt dag"))
 
 def get_interval():
     num_labels = 12
     xlabels = ['J' ,'F' ,'M' ,'A' ,'M' ,'J', 'J', 'A', 'S', 'O', 'N', 'D']
     xticks = np.linspace(15, 345, num_labels)
     days_interval = (1, 365)
+    if quarterYear ==0:
+        xticks = [startDag,sluttDag]
+        xlabels= [startDag,sluttDag]
+        days_interval =(0,360)
+
+
     if quarterYear == 1:
         xticks = [15,45,75]
         xlabels = ['Jan', 'Feb', 'Mars']
@@ -66,6 +74,7 @@ def get_interval():
         xticks = [15, 45, 75]
         xlabels = ['Okt', 'Nov', 'Des']
         days_interval = (270, 360)
+
     axNox.set_xticks(xticks)
     axNox.set_xticklabels(xlabels)
     axNox.set_title("NOX År" if quarterYear == 0 else f"NOK Kvartal {quarterYear}")
