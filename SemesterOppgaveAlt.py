@@ -53,7 +53,8 @@ def get_interval():
     if quarterYear == 0:
         num_labels = 12
         xlabels = ['J' ,'F' ,'M' ,'A' ,'M' ,'J', 'J', 'A', 'S', 'O', 'N', 'D']
-        xticks = np.linspace(0, 360, num_labels)
+        month_starts = [0, 30, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335] #her måtte vi manuelt ta innn verdier for plassene, pga at den blir skeiv viss vi bruker np.linspace
+        xticks = np.array(month_starts)
         days_interval = (0, 360)
 
         xticks = np.append(xticks, [startDag, sluttDag])
