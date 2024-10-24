@@ -39,9 +39,9 @@ bryggen_nox_year= GenereateRandomYearDataList(intencity=1, seed=3)
 asfaltstov_nox_year= GenereateRandomYearDataList(intencity=1.5, seed=4)
 
 #create figure and 3 axis
-fig = plt.figure(figsize=(6, 5))
+fig = plt.figure(figsize=(6.5, 5.5))
 
-axNox = fig.add_axes((0.05, 0.05, 0.9, 0.9))
+axNox = fig.add_axes((0.08, 0.05, 0.85, 0.85))
 
 quarterYear =  int(input("Kvartal 1-4  (0=Hele Året)  : "))
 
@@ -68,7 +68,7 @@ def get_interval():
         days_interval = (270, 360)
     axNox.set_xticks(xticks)
     axNox.set_xticklabels(xlabels)
-    axNox.set_title("NOX År" if quarterYear == 0 else f"NOK Kvartal {quarterYear}")
+    axNox.set_title("NOX År" if quarterYear == 0 else f"NOK Kvartal {quarterYear}", fontweight='bold')
     return days_interval
 
 def plot_graph():
@@ -83,12 +83,9 @@ def plot_graph():
     list_days = np.linspace(1, days, days)
 
     l1, = axNox.plot(list_days, nord_nox, 'blue',linewidth=4)
-
     l2, = axNox.plot(list_days, kron_nox, 'red',linewidth=4)
-    l1, = axNox.plot(list_days, nord_nox, 'blue')
-    l2, = axNox.plot(list_days, kron_nox, 'red')
-    l3, = axNox.plot(list_days, bryggen_nox, 'green')
-    l4, = axNox.plot(list_days, asfaltstov_nox, 'orange')
+    l3, = axNox.plot(list_days, bryggen_nox, 'green',linewidth=4)
+    l4, = axNox.plot(list_days, asfaltstov_nox, 'orange',linewidth=4)
 
 
     lines = [l1, l2, l3, l4]
