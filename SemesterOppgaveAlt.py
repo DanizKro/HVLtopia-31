@@ -44,18 +44,20 @@ fig = plt.figure(figsize=(13, 5))
 axNox = fig.add_axes((0.05, 0.05, 0.45, 0.9))
 
 quarterYear =  int(input("Kvartal 1-4  (0=Hele Året)  : "))
-startDag = int(input("skriv inn start dag "))
-sluttDag = int(input("skriv inn slutt dag"))
+
+if quarterYear == 0:
+    startDag = int(input("Skriv inn start dag (f.eks. 1-360): "))
+    sluttDag = int(input("Skriv inn slutt dag (f.eks. 1-360): "))
 
 def get_interval():
-    num_labels = 12
-    xlabels = ['J' ,'F' ,'M' ,'A' ,'M' ,'J', 'J', 'A', 'S', 'O', 'N', 'D']
-    xticks = np.linspace(15, 345, num_labels)
-    days_interval = (1, 365)
-    if quarterYear ==0:
-        xticks = [startDag,sluttDag]
-        xlabels= [startDag,sluttDag]
-        days_interval =(0,360)
+    if quarterYear == 0:
+        num_labels = 12
+        xlabels = ['J' ,'F' ,'M' ,'A' ,'M' ,'J', 'J', 'A', 'S', 'O', 'N', 'D']
+        xticks = np.linspace(0, 360, num_labels)
+        days_interval = (0, 360)
+
+        xticks = np.append(xticks, [startDag, sluttDag])
+        xlabels = xlabels + [startDag,sluttDag]
 
 
     if quarterYear == 1:
@@ -99,6 +101,11 @@ def plot_graph():
     lines = [l1, l2, l3, l4]
     axNox.legend(lines, ["Nordnes", "Kronstad","Bryggen","Asfaltstøv"])
     axNox.grid(linestyle='--')
+
+    if quarterYear == 0:
+        axNox.axvline(x=(startDag ), color='red', linestyle='--', label=f'Start: {startDag}')
+        axNox.axvline(x=(sluttDag ), color='red', linestyle='--', label=f'Slutt: {sluttDag}')
+        axNox.legend()
 
     plt.draw()
 
