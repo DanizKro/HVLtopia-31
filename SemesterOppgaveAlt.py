@@ -99,6 +99,12 @@ def plot_graph():
         axNox.axvline(x=sluttDag, color='red', linestyle='--', label=f'Slutt: {sluttDag}')
         axNox.legend()
 
+    if quarterYear == 0:
+        axAsfalt.axvline(x=startDag, color='red', linestyle='--', label=f'Start: {startDag}')
+        axAsfalt.axvline(x=sluttDag, color='red', linestyle='--', label=f'Slutt: {sluttDag}')
+        axNox.legend()
+
+
     # Asphalt Dust Data
     nord_asfaltstov = nord_asfaltstov_year[days_interval[0]:days_interval[1]]
     kron_asfaltstov = kron_asfaltstov_year[days_interval[0]:days_interval[1]]
