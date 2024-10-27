@@ -52,19 +52,19 @@ def get_interval():
     elif quarterYear == 1:
         xticks = [15, 45, 75]
         xlabels = ['Jan', 'Feb', 'Mars']
-        days_interval = (0, 90)
+        days_interval = (0, 91)
     elif quarterYear == 2:
         xticks = [15, 45, 75]
         xlabels = ['April', 'Mai', 'Juni']
-        days_interval = (90, 180)
+        days_interval = (92, 182)
     elif quarterYear == 3:
         xticks = [15, 45, 75]
         xlabels = ['July', 'Aug', 'Sept']
-        days_interval = (180, 270)
+        days_interval = (183, 274)
     elif quarterYear == 4:
         xticks = [15, 45, 75]
         xlabels = ['Okt', 'Nov', 'Des']
-        days_interval = (270, 360)
+        days_interval = (275, 360)
 
     return days_interval, xticks, xlabels
 
@@ -87,7 +87,7 @@ def plot_graph():
     axNox.plot(list_days, nord_nox, 'blue', linewidth=2, label="Nordnes")
     axNox.plot(list_days, kron_nox, 'red', linewidth=2, label="Kronstad")
     axNox.plot(list_days, bryggen_nox, 'green', linewidth=2, label="Bryggen")
-    axNox.set_title("NOX nivåer" if quarterYear == 0 else f"NOx Levels - Quarter {quarterYear}")
+    axNox.set_title("NOX nivåer" if quarterYear == 0 else f"NOx Nivåer - Kvartal {quarterYear}")
     axNox.set_xticks(xticks)
     axNox.set_xticklabels(xlabels)
     axNox.grid(linestyle='--')
@@ -113,7 +113,7 @@ def plot_graph():
     axAsfalt.plot(list_days, nord_asfaltstov, 'blue', linewidth=2, label="Nordnes")
     axAsfalt.plot(list_days, kron_asfaltstov, 'red', linewidth=2, label="Kronstad")
     axAsfalt.plot(list_days, bryggen_asfaltstov, 'green', linewidth=2, label="Bryggen")
-    axAsfalt.set_title("Asfaltlstøv nivåer" if quarterYear == 0 else f"Asphalt Dust Levels - Quarter {quarterYear}")
+    axAsfalt.set_title("Asfaltlstøv nivåer" if quarterYear == 0 else f"Asfaltstøv verdier - Kvartal {quarterYear}")
     axAsfalt.set_xticks(xticks)
     axAsfalt.set_xticklabels(xlabels)
     axAsfalt.grid(linestyle='--')
