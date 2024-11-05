@@ -270,6 +270,65 @@ h1, h2, h4  {
     width: 33.33%;
     padding: 5px;
   }
+
+  /*om sigrid*/
+.glitter {
+    background-image: url("Bilder/Glitter.jpg");     /* velger bildet fra filene våre*/
+    background-size: cover;
+    background-position: center;
+  }
+.prinsesse {
+    width: 300px; /* Sett bredden */
+    height: 300px; /* Sett høyden (må være lik bredden for perfekt sirkel) */
+    border-radius: 50%; /* Gjør bildet rundt */
+    object-fit: cover; /* Sikrer at bildet fyller ut, uten å forvrenges */
+    position: absolute; /* Sett posisjon til absolutt for å kunne plassere bildet innenfor forelder-elementet */
+    top: 0%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
+    left: 22%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
+    transform: translate(90%, 50%); /* Bruk transformasjon for å sentrere bildet i forhold til forelder-elementet */
+  }
+  .polo {
+    width: 300px; /* Sett bredden */
+    height: 300px; /* Sett høyden (må være lik bredden for perfekt sirkel) */
+    border-radius: 50%; /* Gjør bildet rundt */
+    object-fit: cover; /* Sikrer at bildet fyller ut, uten å forvrenges */
+    position: absolute; /* Sett posisjon til absolutt for å kunne plassere bildet innenfor forelder-elementet */
+    top: 50%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
+    left: -7%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
+    transform: translate(90%, 50%); /* Bruk transformasjon for å sentrere bildet i forhold til forelder-elementet */
+  }
+  .parykk {
+    width: 300px; /* Sett bredden */
+    height: 300px; /* Sett høyden (må være lik bredden for perfekt sirkel) */
+    border-radius: 50%; /* Gjør bildet rundt */
+    object-fit: cover; /* Sikrer at bildet fyller ut, uten å forvrenges */
+    position: absolute; /* Sett posisjon til absolutt for å kunne plassere bildet innenfor forelder-elementet */
+    top: 50%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
+    left: 50%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
+    transform: translate(90%, 50%); /* Bruk transformasjon for å sentrere bildet i forhold til forelder-elementet */
+  }
+  .fadder {
+    width: 300px; /* Sett bredden */
+    height: 300px; /* Sett høyden (må være lik bredden for perfekt sirkel) */
+    border-radius: 50%; /* Gjør bildet rundt */
+    object-fit: cover; /* Sikrer at bildet fyller ut, uten å forvrenges */
+    position: absolute; /* Sett posisjon til absolutt for å kunne plassere bildet innenfor forelder-elementet */
+    top: 117%; /* Plasser toppen av bildet 50% ned fra toppen av forelder-elementet */
+    left: 23%; /* Plasser venstre kant av bildet 50% inn fra venstre kant av forelder-elementet */
+    transform: translate(90%, 50%); /* Bruk transformasjon for å sentrere bildet i forhold til forelder-elementet */
+  }
+
+  #hoved7 {
+    position: absolute;
+    top: 500px;  /* Avstand fra toppen */
+    left: 550px; /* Avstand fra venstre */
+    width: 20%;
+    margin-right: 100px autox;
+    padding: 40px;
+    background-color: rgba(255, 96, 197, 0.65);
+    border: 3px solid rgba(255, 96, 197, 0.65);
+  }
+
   
   /* Clear floats after image containers */
   .row::after {
